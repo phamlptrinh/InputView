@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lbDe"
+        android:layout_width="124dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="45dp"
+        android:lineSpacingMultiplier="1"
+        android:text="Educational attainment"
+        android:textAlignment="textEnd"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/lbNa"
+        app:layout_constraintTop_toBottomOf="@+id/lbGe" />
+
+    <TextView
+        android:id="@+id/lbAg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Age"
+        android:textAlignment="textEnd"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/lbNa"
+        app:layout_constraintTop_toBottomOf="@+id/lbDe" />
+
+    <TextView
+        android:id="@+id/lbAg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lbAg"
+        app:layout_constraintStart_toStartOf="@+id/edNa" />
+
+    <TextView
+        android:id="@+id/lbSp"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Do you like sport?"
+        android:textAlignment="textEnd"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/lbNa"
+        app:layout_constraintTop_toBottomOf="@+id/lbAg" />
+
+    <TextView
+        android:id="@+id/lbMu"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="45dp"
+        android:singleLine="false"
+        android:text="Which kind of music do you like most?"
+        android:textAlignment="textEnd"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/lbNa"
+        app:layout_constraintTop_toBottomOf="@+id/lbSp" />
+
+    <TextView
+        android:id="@+id/lbNa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:text="User name"
+        android:textAlignment="textEnd"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbNu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:inputType="phone"
+        android:text="Phone Number"
+        android:textAlignment="textEnd"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/lbNa"
+        app:layout_constraintTop_toBottomOf="@+id/lbNa" />
+
+    <TextView
+        android:id="@+id/lbGe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Gender"
+        android:textAlignment="textEnd"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/lbNa"
+        app:layout_constraintTop_toBottomOf="@+id/lbNu" />
+
+    <EditText
+        android:id="@+id/edNa"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="-8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lbNa"
+        app:layout_constraintStart_toEndOf="@+id/lbNa" />
+
+    <Button
+        android:id="@+id/btRe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Register"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/rdgMu"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="99dp" />
+
+    <EditText
+        android:id="@+id/edNu"
+        android:layout_width="247dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="-8dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lbNu"
+        app:layout_constraintStart_toEndOf="@+id/lbNu"
+        app:layout_constraintStart_toStartOf="@+id/edNa" />
+
+    <Switch
+        android:id="@+id/swGe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:showText="true"
+        android:textAlignment="viewEnd"
+        android:textDirection="anyRtl"
+        android:textOff="male"
+        android:textOn="female"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lbGe"
+        app:layout_constraintStart_toStartOf="@+id/edNa" />
+
+    <Spinner
+        android:id="@+id/spDe"
+        android:layout_width="197dp"
+        android:layout_height="26dp"
+        android:foregroundTintMode="src_over"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toBottomOf="@+id/lbDe"
+        app:layout_constraintStart_toStartOf="@+id/edNa" />
+
+    <SeekBar
+        android:id="@+id/sbAg"
+        android:layout_width="226dp"
+        android:layout_height="30dp"
+        android:progress="30"
+        app:layout_constraintBottom_toBottomOf="@+id/lbAg"
+        app:layout_constraintStart_toEndOf="@+id/lbAg2" />
+
+    <CheckBox
+        android:id="@+id/cbSp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-8dp"
+        android:text="Yes, I do."
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lbSp"
+        app:layout_constraintStart_toStartOf="@+id/edNa" />
+
+    <RadioGroup
+        android:id="@+id/rdgMu"
+        android:layout_width="180dp"
+        android:layout_height="143dp"
+        app:layout_constraintStart_toStartOf="@+id/edNa"
+        app:layout_constraintTop_toTopOf="@+id/lbMu">
+
+        <RadioButton
+            android:id="@+id/rdPo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pop"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/rdRo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rock"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/rdCl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Classic"
+            android:textSize="24dp" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
